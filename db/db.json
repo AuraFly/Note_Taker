@@ -4,11 +4,13 @@
         "text": "Test text"
     },
     {
-        "note_id": "e43c"
+        "title": "Please delete finally?",
+        "text": "I want to go to bed.",
+        "id": "d807"
     },
     {
-        "title": "This is a Test",
-        "text": "Please just save a note!",
-        "note_id": "f7e0"
+        "title": "Yay!",
+        "text": "Im done!",
+        "id": "9dfb"
     }
 ]
