@@ -9,9 +9,9 @@ notesRt.get('/', (req, res) => {
     res.json(JSON.parse(data)));
 });
 
-// POST Route for submitting a note
+// POST Route for submitting a note ***UTILIZED WHEN SAVE ICON PRESSED*
+//Checks if there is anything in the resoponse body, if there is save it to the db with an id using UUID.
 notesRt.post('/', (req, res) => {
-    // Destructuring assignment for the items in req.body
     const {title, text} = req.body;
     if (req.body) {
         const newNote = {
@@ -24,7 +24,7 @@ reAppend(newNote, './db/db.json');
     }
 });
         
-//uses id assigned with uuid to remove the assigned data from the db, then rewrite
+//Uses id assigned with uuid to remove the assigned data from the db, then rewrite
 // I struggled with this a while. I think I get it after some help, but will ask for help from
 // tutor.
 notesRt.delete('/:id', (req, res) => {
